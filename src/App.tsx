@@ -1,9 +1,10 @@
-import { MantineProvider, Text } from '@mantine/core';
+import { Button } from '@mantine/core';
+import { IconExternalLink } from '@tabler/icons';
 
-export default function App() {
+function Demo() {
   return (
-    <MantineProvider withGlobalStyles withNormalizeCSS>
-      <Text>Welcome to Mantine!</Text>
-    </MantineProvider>
+    <Button component="a" href="#" variant="outline" leftIcon={<IconExternalLink size={14} />}>
+      Open in new tab
+    </Button>
   );
 }
