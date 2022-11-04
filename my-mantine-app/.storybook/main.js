@@ -14,3 +14,5 @@ module.exports = {
     "builder": "@storybook/builder-webpack5"
   }
 }
+
+module.exports = { addons: ['@locofy/storybook-addon'] };
